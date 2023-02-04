@@ -2,12 +2,13 @@
 \usetikzlibrary {arrows.meta}
 \begin{document}
     \begin{tikzpicture}
-        [every node/.style={rectangle,draw=black,thick,inner sep=0pt,text width=20mm,align=center},
-        home-square/.style={minimum height=2cm,minimum width=4cm,font=\huge},
+        [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
+        home-square/.style={minimum size=4cm,text width=4cm,font=\huge\bfseries},
         blue-square/.style={fill=blue,minimum size=2cm},
         yellow-square/.style={fill=yellow,minimum size=2cm},
-        white-square/.style={fill=gray!25,minimum size=2cm,font=\small},
-        arrowtip/.tip = {Stealth[scale=2]}
+        white-square/.style={minimum size=2cm,text width=2cm,font=\small\bfseries},
+        whiteroad/.style={dash pattern=on 4mm off 2mm,thick,white},
+        blackroad/.style={dash pattern=on 4mm off 2mm,thick}
         ]
         \node[home-square] (node-0) at (0, 0) {HOME};
         \node[blue-square] (node-1) at (-3, 0) {};
@@ -51,7 +52,6 @@
         \node[white-square] (node-39) at (15, 38) {ROBBERY\\250};
         \node[blue-square] (node-40) at (13, 38) {};
         \node[blue-square] (node-41) at (11, 36) {};
-        \draw [-arrowtip,rounded corners=1cm,thick] (node-40.north west) -| (node-41.north west);
         \node[white-square] (node-42) at (11, 34) {GALA\\TAKE\\CARD};
         \node[blue-square] (node-43) at (11, 32) {};
         \node[blue-square] (node-44) at (-5, 30) {};
@@ -65,5 +65,21 @@
         \node[blue-square] (node-52) at (11, 30) {};
         \node[white-square] (node-53) at (13, 30) {SON LEFT\\COAT AT\\CAFE\\GO BACK};
         \node[white-square] (node-54) at (15, 30) {GALA\\TAKE\\CARD};
+        \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 5);
+        \draw[whiteroad] (-7, 7) -- (-7, 11);
+        \draw[whiteroad] (-7, 13) -- (-7, 17);
+        \draw[whiteroad] (-7, 19) -- (-7, 21);
+        \draw[whiteroad] (-7, 23) -- (-7, 25);
+        \draw[whiteroad] (-7, 27) -- (-7, 34) -- (-5, 34) -- (-5, 41);
+        \draw[blackroad] (-5, 41) -- (-5, 42) -- (0, 42);
+        \draw[blackroad] (2, 42) -- (4, 42);
+        \draw[blackroad] (8, 42) -- (10, 42);
+        \draw[whiteroad] (16, 42) -- (17, 42) -- (17, 38) -- (16, 38);
+        \draw[whiteroad] (14, 38) -- (12, 38);
+        \draw[blackroad] (12, 38) -- (11, 38) -- (11, 37);
+        \draw[whiteroad] (11, 37) -- (11, 35);
+        \draw[whiteroad] (11, 33) -- (11, 30);
+        \draw[whiteroad] (-7, 30) -- (8, 30);
+        \draw[whiteroad] (10, 30) -- (12, 30);
     \end{tikzpicture}
 \end{document}

@@ -1,11 +1,15 @@
 \documentclass[tikz,border=2cm]{standalone}
 \usetikzlibrary {arrows.meta}
+\definecolor{pastelblue}{rgb}{0.68, 0.78, 0.81}
+\definecolor{pastelyellow}{rgb}{0.99, 0.99, 0.59}
+\definecolor{pastelpink}{rgb}{1.0, 0.82, 0.86}
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
         home-square/.style={minimum size=4cm,text width=4cm,font=\huge\bfseries},
-        blue-square/.style={fill=blue,minimum size=2cm},
-        yellow-square/.style={fill=yellow,minimum size=2cm},
+        blue-square/.style={fill=pastelblue,minimum size=2cm},
+        yellow-square/.style={fill=pastelyellow,minimum size=2cm},
+        pink-square/.style={fill=pastelpink,minimum size=2cm},
         white-square/.style={minimum size=2cm,text width=2cm,font=\small\bfseries},
         whiteroad/.style={dash pattern=on 4mm off 2mm,thick,white},
         blackroad/.style={dash pattern=on 4mm off 2mm,thick}
@@ -49,6 +53,19 @@
         \node[blue-square] (node-49) at (5, 30) {};
         \node[blue-square] (node-50) at (7, 30) {};
         \node[blue-square] (node-52) at (11, 30) {};
+        \node[blue-square] (node-55) at (17, 32) {};
+        \node[blue-square] (node-56) at (17, 34) {};
+        \node[blue-square] (node-58) at (21, 38) {};
+        \node[blue-square] (node-59) at (23, 38) {};
+        \node[pink-square] (node-60) at (23, 36) {};
+        \node[pink-square] (node-61) at (25, 34) {};
+        \node[pink-square] (node-62) at (27, 36) {};
+        \node[pink-square] (node-63) at (29, 36) {};
+        \node[pink-square] (node-64) at (31, 34) {};
+        \node[pink-square] (node-65) at (31, 32) {};
+        \node[pink-square] (node-66) at (29, 30) {};
+        \node[pink-square] (node-70) at (23, 28) {};
+        \node[pink-square] (node-71) at (23, 26) {};
         \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 34) -- (-5, 34) -- (-5, 41);
         \draw[blackroad] (-5, 41) -- (-5, 42) -- (0, 42);
         \draw[blackroad] (2, 42) -- (4, 42);
@@ -73,5 +90,9 @@
         \node[white-square] (node-51) at (9, 30) {PAY TOLL\\50};
         \node[white-square] (node-53) at (13, 30) {SON LEFT\\COAT AT\\CAFE\\GO BACK};
         \node[white-square] (node-54) at (15, 30) {GALA\\TAKE\\CARD};
+        \node[white-square] (node-57) at (19, 36) {BANK\\COLLECT\\250};
+        \node[white-square] (node-67) at (27, 30) {{\tiny DAUGHTER}\\CAR SICK\\MISS A\\TURN};
+        \node[white-square] (node-68) at (25, 30) {SNACK\\100};
+        \node[white-square] (node-69) at (23, 30) {ROG\\GO TO\\FRED'S};
     \end{tikzpicture}
 \end{document}

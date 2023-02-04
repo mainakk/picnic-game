@@ -3,76 +3,78 @@
 \definecolor{pastelblue}{rgb}{0.68, 0.78, 0.81}
 \definecolor{pastelyellow}{rgb}{0.99, 0.99, 0.59}
 \definecolor{pastelpink}{rgb}{1.0, 0.82, 0.86}
+\newif\ifimportant
+\importanttrue
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
         home-square/.style={minimum size=4cm,text width=4cm,font=\huge\bfseries},
-        blue-square/.style={fill=pastelblue,minimum size=2cm},
-        yellow-square/.style={fill=pastelyellow,minimum size=2cm},
-        pink-square/.style={fill=pastelpink,minimum size=2cm},
+        blue-square/.style={fill=pastelblue,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
+        yellow-square/.style={fill=pastelyellow,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
+        pink-square/.style={fill=pastelpink,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         white-square/.style={minimum size=2cm,text width=2cm,font=\small\bfseries},
         whiteroad/.style={dash pattern=on 4mm off 2mm,thick,white},
         blackroad/.style={dash pattern=on 4mm off 2mm,thick}
         ]
         \node[home-square] (node-0) at (0, 0) {HOME};
-        \node[blue-square] (node-1) at (-3, 0) {};
-        \node[blue-square] (node-2) at (-5, 0) {};
-        \node[blue-square] (node-3) at (-7, 0) {};
-        \node[blue-square] (node-4) at (-7, 2) {};
-        \node[blue-square] (node-5) at (-7, 4) {};
-        \node[blue-square] (node-7) at (-7, 8) {};
-        \node[blue-square] (node-8) at (-7, 10) {};
-        \node[blue-square] (node-10) at (-7, 14) {};
-        \node[blue-square] (node-11) at (-7, 16) {};
-        \node[blue-square] (node-13) at (-7, 20) {};
-        \node[blue-square] (node-15) at (-7, 24) {};
-        \node[blue-square] (node-17) at (-7, 28) {};
-        \node[blue-square] (node-18) at (-7, 30) {};
-        \node[blue-square] (node-19) at (-7, 32) {};
-        \node[blue-square] (node-20) at (-7, 34) {};
-        \node[blue-square] (node-21) at (-5, 34) {};
-        \node[blue-square] (node-22) at (-5, 36) {};
-        \node[blue-square] (node-23) at (-5, 38) {};
-        \node[blue-square] (node-24) at (-5, 40) {};
-        \node[yellow-square] (node-25) at (-5, 42) {};
-        \node[yellow-square] (node-26) at (-3, 42) {};
-        \node[yellow-square] (node-27) at (-1, 42) {};
-        \node[yellow-square] (node-29) at (3, 42) {};
-        \node[yellow-square] (node-32) at (9, 42) {};
-        \node[blue-square] (node-36) at (17, 42) {};
-        \node[blue-square] (node-37) at (17, 40) {};
-        \node[blue-square] (node-38) at (17, 38) {};
-        \node[blue-square] (node-40) at (13, 38) {};
-        \node[blue-square] (node-41) at (11, 36) {};
-        \node[blue-square] (node-43) at (11, 32) {};
-        \node[blue-square] (node-44) at (-5, 30) {};
-        \node[blue-square] (node-45) at (-3, 30) {};
-        \node[blue-square] (node-46) at (-1, 30) {};
-        \node[blue-square] (node-47) at (1, 30) {};
-        \node[blue-square] (node-48) at (3, 30) {};
-        \node[blue-square] (node-49) at (5, 30) {};
-        \node[blue-square] (node-50) at (7, 30) {};
-        \node[blue-square] (node-52) at (11, 30) {};
-        \node[blue-square] (node-55) at (17, 32) {};
-        \node[blue-square] (node-56) at (17, 34) {};
-        \node[blue-square] (node-58) at (21, 38) {};
-        \node[blue-square] (node-59) at (23, 38) {};
-        \node[pink-square] (node-60) at (23, 36) {};
-        \node[pink-square] (node-61) at (25, 34) {};
-        \node[pink-square] (node-62) at (27, 36) {};
-        \node[pink-square] (node-63) at (29, 36) {};
-        \node[pink-square] (node-64) at (31, 34) {};
-        \node[pink-square] (node-65) at (31, 32) {};
-        \node[pink-square] (node-66) at (29, 30) {};
-        \node[pink-square] (node-70) at (23, 28) {};
-        \node[pink-square] (node-71) at (23, 26) {};
-        \node[blue-square] (node-72) at (23, 40) {};
-        \node[blue-square] (node-73) at (25, 40) {};
-        \node[blue-square] (node-74) at (27, 40) {};
-        \node[blue-square] (node-75) at (29, 40) {};
-        \node[blue-square] (node-76) at (31, 40) {};
-        \node[blue-square] (node-77) at (33, 40) {};
-        \node[blue-square] (node-78) at (35, 40) {};
+        \node[blue-square] (node-1) at (-3, 0) {\ifimportant 1 \fi};
+        \node[blue-square] (node-2) at (-5, 0) {\ifimportant 2 \fi};
+        \node[blue-square] (node-3) at (-7, 0) {\ifimportant 3 \fi};
+        \node[blue-square] (node-4) at (-7, 2) {\ifimportant 4 \fi};
+        \node[blue-square] (node-5) at (-7, 4) {\ifimportant 5 \fi};
+        \node[blue-square] (node-7) at (-7, 8) {\ifimportant 7 \fi};
+        \node[blue-square] (node-8) at (-7, 10) {\ifimportant 8 \fi};
+        \node[blue-square] (node-10) at (-7, 14) {\ifimportant 10 \fi};
+        \node[blue-square] (node-11) at (-7, 16) {\ifimportant 11 \fi};
+        \node[blue-square] (node-13) at (-7, 20) {\ifimportant 13 \fi};
+        \node[blue-square] (node-15) at (-7, 24) {\ifimportant 15 \fi};
+        \node[blue-square] (node-17) at (-7, 28) {\ifimportant 17 \fi};
+        \node[blue-square] (node-18) at (-7, 30) {\ifimportant 18 \fi};
+        \node[blue-square] (node-19) at (-7, 32) {\ifimportant 19 \fi};
+        \node[blue-square] (node-20) at (-7, 34) {\ifimportant 20 \fi};
+        \node[blue-square] (node-21) at (-5, 34) {\ifimportant 21 \fi};
+        \node[blue-square] (node-22) at (-5, 36) {\ifimportant 22 \fi};
+        \node[blue-square] (node-23) at (-5, 38) {\ifimportant 23 \fi};
+        \node[blue-square] (node-24) at (-5, 40) {\ifimportant 24 \fi};
+        \node[yellow-square] (node-25) at (-5, 42) {\ifimportant 25 \fi};
+        \node[yellow-square] (node-26) at (-3, 42) {\ifimportant 26 \fi};
+        \node[yellow-square] (node-27) at (-1, 42) {\ifimportant 27 \fi};
+        \node[yellow-square] (node-29) at (3, 42) {\ifimportant 29 \fi};
+        \node[yellow-square] (node-32) at (9, 42) {\ifimportant 32 \fi};
+        \node[blue-square] (node-36) at (17, 42) {\ifimportant 36 \fi};
+        \node[blue-square] (node-37) at (17, 40) {\ifimportant 37 \fi};
+        \node[blue-square] (node-38) at (17, 38) {\ifimportant 38 \fi};
+        \node[blue-square] (node-40) at (13, 38) {\ifimportant 40 \fi};
+        \node[blue-square] (node-41) at (11, 36) {\ifimportant 41 \fi};
+        \node[blue-square] (node-43) at (11, 32) {\ifimportant 43 \fi};
+        \node[blue-square] (node-44) at (-5, 30) {\ifimportant 44 \fi};
+        \node[blue-square] (node-45) at (-3, 30) {\ifimportant 45 \fi};
+        \node[blue-square] (node-46) at (-1, 30) {\ifimportant 46 \fi};
+        \node[blue-square] (node-47) at (1, 30) {\ifimportant 47 \fi};
+        \node[blue-square] (node-48) at (3, 30) {\ifimportant 48 \fi};
+        \node[blue-square] (node-49) at (5, 30) {\ifimportant 49 \fi};
+        \node[blue-square] (node-50) at (7, 30) {\ifimportant 50 \fi};
+        \node[blue-square] (node-52) at (11, 30) {\ifimportant 52 \fi};
+        \node[blue-square] (node-55) at (17, 32) {\ifimportant 55 \fi};
+        \node[blue-square] (node-56) at (17, 34) {\ifimportant 56 \fi};
+        \node[blue-square] (node-58) at (21, 38) {\ifimportant 58 \fi};
+        \node[blue-square] (node-59) at (23, 38) {\ifimportant 59 \fi};
+        \node[pink-square] (node-60) at (23, 36) {\ifimportant 60 \fi};
+        \node[pink-square] (node-61) at (25, 34) {\ifimportant 61 \fi};
+        \node[pink-square] (node-62) at (27, 36) {\ifimportant 62 \fi};
+        \node[pink-square] (node-63) at (29, 36) {\ifimportant 63 \fi};
+        \node[pink-square] (node-64) at (31, 34) {\ifimportant 64 \fi};
+        \node[pink-square] (node-65) at (31, 32) {\ifimportant 65 \fi};
+        \node[pink-square] (node-66) at (29, 30) {\ifimportant 66 \fi};
+        \node[pink-square] (node-70) at (23, 28) {\ifimportant 70 \fi};
+        \node[pink-square] (node-71) at (23, 26) {\ifimportant 71 \fi};
+        \node[blue-square] (node-72) at (23, 40) {\ifimportant 72 \fi};
+        \node[blue-square] (node-73) at (25, 40) {\ifimportant 73 \fi};
+        \node[blue-square] (node-74) at (27, 40) {\ifimportant 74 \fi};
+        \node[blue-square] (node-75) at (29, 40) {\ifimportant 75 \fi};
+        \node[blue-square] (node-76) at (31, 40) {\ifimportant 76 \fi};
+        \node[blue-square] (node-77) at (33, 40) {\ifimportant 77 \fi};
+        \node[blue-square] (node-78) at (35, 40) {\ifimportant 78 \fi};
         \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 34) -- (-5, 34) -- (-5, 41);
         \draw[whiteroad] (-5, 41) -- (-5, 42) -- (0, 42);
         \draw[whiteroad] (2, 42) -- (4, 42);

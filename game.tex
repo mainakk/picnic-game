@@ -4,11 +4,12 @@
 \definecolor{pastelyellow}{rgb}{0.99, 0.99, 0.59}
 \definecolor{pastelpink}{rgb}{1.0, 0.82, 0.86}
 \newif\ifimportant
-\importanttrue
+\importantfalse
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
         home-square/.style={minimum size=4cm,text width=4cm,font=\huge\bfseries},
+        airport-square/.style={minimum size=4cm,text width=4cm,font=\huge\bfseries},
         blue-square/.style={fill=pastelblue,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         yellow-square/.style={fill=pastelyellow,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         pink-square/.style={fill=pastelpink,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
@@ -75,6 +76,29 @@
         \node[blue-square] (node-76) at (31, 40) {\ifimportant 76 \fi};
         \node[blue-square] (node-77) at (33, 40) {\ifimportant 77 \fi};
         \node[blue-square] (node-78) at (35, 40) {\ifimportant 78 \fi};
+        \node[blue-square] (node-80) at (35, 36) {\ifimportant 80 \fi};
+        \node[blue-square] (node-81) at (35, 34) {\ifimportant 81 \fi};
+        \node[blue-square] (node-83) at (35, 30) {\ifimportant 83 \fi};
+        \node[blue-square] (node-84) at (35, 28) {\ifimportant 84 \fi};
+        \node[blue-square] (node-86) at (35, 24) {\ifimportant 86 \fi};
+        \node[blue-square] (node-87) at (33, 24) {\ifimportant 87 \fi};
+        \node[blue-square] (node-89) at (29, 24) {\ifimportant 89 \fi};
+        \node[blue-square] (node-91) at (25, 24) {\ifimportant 91 \fi};
+        \node[blue-square] (node-92) at (23, 24) {\ifimportant 92 \fi};
+        \node[blue-square] (node-93) at (21, 24) {\ifimportant 93 \fi};
+        \node[blue-square] (node-95) at (17, 24) {\ifimportant 95 \fi};
+        \node[blue-square] (node-96) at (15, 24) {\ifimportant 96 \fi};
+        \node[blue-square] (node-98) at (11, 24) {\ifimportant 98 \fi};
+        \node[blue-square] (node-99) at (9, 24) {\ifimportant 99 \fi};
+        \node[blue-square] (node-101) at (5, 24) {\ifimportant 101 \fi};
+        \node[blue-square] (node-103) at (1, 24) {\ifimportant 103 \fi};
+        \node[blue-square] (node-104) at (-1, 24) {\ifimportant 104 \fi};
+        \node[blue-square] (node-106) at (-1, 20) {\ifimportant 106 \fi};
+        \node[blue-square] (node-108) at (-1, 16) {\ifimportant 108 \fi};
+        \node[blue-square] (node-110) at (-1, 12) {\ifimportant 110 \fi};
+        \node[blue-square] (node-112) at (-1, 8) {\ifimportant 112 \fi};
+        \node[blue-square] (node-114) at (3, 8) {\ifimportant 114 \fi};
+        \node[airport-square] (node-115) at (3, 11) {AIRPORT};
         \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 34) -- (-5, 34) -- (-5, 41);
         \draw[whiteroad] (-5, 41) -- (-5, 42) -- (0, 42);
         \draw[whiteroad] (2, 42) -- (4, 42);
@@ -96,7 +120,7 @@
         \draw[whiteroad] (31, 35) -- (31, 31);
         \draw[blackroad] (31, 31) -- (31, 30) -- (30, 30);
         \draw[whiteroad] (30, 30) -- (23, 30) -- (23, 24);
-        \draw[whiteroad] (23, 38) -- (23, 40) -- (35, 40) -- (35, 39);
+        \draw[whiteroad] (23, 38) -- (23, 40) -- (35, 40) -- (35, 24) -- (-1, 24) -- (-1, 8) -- (3, 8) -- (3, 9);
         \node[white-square,rotate=270] (node-6) at (-7, 6) {SNACKS\\50};
         \node[white-square,rotate=270] (node-9) at (-7, 12) {PETROL\\50};
         \node[white-square,rotate=270] (node-12) at (-7, 18) {MUM LEFT\\STOVE ON\\GO HOME};
@@ -114,8 +138,22 @@
         \node[white-square] (node-53) at (13, 30) {SON LEFT\\COAT AT\\CAFE\\GO BACK};
         \node[white-square] (node-54) at (15, 30) {GALA\\TAKE\\CARD};
         \node[white-square] (node-57) at (19, 36) {BANK\\COLLECT\\250};
-        \node[white-square] (node-67) at (27, 30) {{\tiny DAUGHTER}\\CAR SICK\\MISS A\\TURN};
+        \node[white-square] (node-67) at (27, 30) {{\scriptsize DAUGHTER}\\CAR SICK\\MISS A\\TURN};
         \node[white-square] (node-68) at (25, 30) {SNACK\\100};
         \node[white-square] (node-69) at (23, 30) {ROG\\GO TO\\FRED'S};
+        \node[white-square,rotate=90] (node-79) at (35, 38) {YOU\\FIND\\100\\ON ROAD};
+        \node[white-square,rotate=90] (node-82) at (35, 32) {250\\MOVED\\INTO CAR\\WINDOW};
+        \node[white-square,rotate=90] (node-85) at (35, 26) {YOU WON\\PETROL\\STATION\\CONTEST\\150};
+        \node[white-square] (node-88) at (31, 24) {CAR\\REPAIRS\\100};
+        \node[white-square] (node-90) at (27, 24) {GALA\\TAKE\\CARD};
+        \node[white-square] (node-94) at (19, 24) {GALA\\TAKE\\CARD};
+        \node[white-square] (node-97) at (13, 24) {DINNER\\100};
+        \node[white-square] (node-100) at (7, 24) {FOR 250\\YOU CAN\\FLY TO\\AIRPORT};
+        \node[white-square] (node-101) at (3, 24) {PUNCURE\\BACK TO\\FRED'S};
+        \node[white-square,rotate=270] (node-105) at (-1, 22) {PETROL\\100};
+        \node[white-square,rotate=270] (node-107) at (-1, 18) {BANK\\COLLECT\\500};
+        \node[white-square,rotate=270] (node-109) at (-1, 14) {VISIT\\FARM\\50};
+        \node[white-square,rotate=270] (node-111) at (-1, 10) {SNACKS\\100};
+        \node[white-square] (node-113) at (1, 8) {GALA\\TAKE\\CARD};
     \end{tikzpicture}
 \end{document}

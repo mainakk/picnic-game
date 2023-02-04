@@ -1,18 +1,20 @@
 \documentclass[tikz,border=2cm]{standalone}
 \definecolor{darkpastelblue}{rgb}{0.47, 0.62, 0.8}
 \definecolor{pastelyellow}{rgb}{0.99, 0.99, 0.59}
-\definecolor{pastelpink}{rgb}{1.0, 0.82, 0.86}
+\definecolor{pastelviolet}{rgb}{0.8, 0.6, 0.79}
 \definecolor{pastelblue}{rgb}{0.68, 0.78, 0.81}
+\definecolor{pastelred}{rgb}{1.0, 0.41, 0.38}
+\definecolor{pastelorange}{rgb}{1.0, 0.7, 0.28}
 \newif\ifimportant
 \importanttrue
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
-        home-square/.style={minimum size=4cm,text width=4cm,font=\LARGE\bfseries},
-        airport-square/.style={minimum size=4cm,text width=4cm,font=\LARGE\bfseries},
+        home-square/.style={fill=pastelred,minimum size=4cm,text width=4cm,font=\LARGE\bfseries},
+        airport-square/.style={fill=pastelorange,minimum size=4cm,text width=4cm,font=\LARGE\bfseries},
         dark-blue-square/.style={fill=darkpastelblue,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         yellow-square/.style={fill=pastelyellow,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
-        pink-square/.style={fill=pastelpink,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
+        violet-square/.style={fill=pastelviolet,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         blue-square/.style={fill=pastelblue,minimum size=2cm,text width=2cm,font=\huge\bfseries,text=white},
         white-square/.style={minimum size=2cm,text width=2cm,font=\small\bfseries},
         whiteroad/.style={dash pattern=on 4mm off 2mm,thick,white},
@@ -61,15 +63,15 @@
         \node[dark-blue-square] (node-56) at (17, 34) {\ifimportant 56 \fi};
         \node[dark-blue-square] (node-58) at (21, 38) {\ifimportant 58 \fi};
         \node[dark-blue-square] (node-59) at (23, 38) {\ifimportant 59 \fi};
-        \node[pink-square] (node-60) at (23, 36) {\ifimportant 60 \fi};
-        \node[pink-square] (node-61) at (25, 34) {\ifimportant 61 \fi};
-        \node[pink-square] (node-62) at (27, 36) {\ifimportant 62 \fi};
-        \node[pink-square] (node-63) at (29, 36) {\ifimportant 63 \fi};
-        \node[pink-square] (node-64) at (31, 34) {\ifimportant 64 \fi};
-        \node[pink-square] (node-65) at (31, 32) {\ifimportant 65 \fi};
-        \node[pink-square] (node-66) at (29, 30) {\ifimportant 66 \fi};
-        \node[pink-square] (node-70) at (23, 28) {\ifimportant 70 \fi};
-        \node[pink-square] (node-71) at (23, 26) {\ifimportant 71 \fi};
+        \node[violet-square] (node-60) at (23, 36) {\ifimportant 60 \fi};
+        \node[violet-square] (node-61) at (25, 34) {\ifimportant 61 \fi};
+        \node[violet-square] (node-62) at (27, 36) {\ifimportant 62 \fi};
+        \node[violet-square] (node-63) at (29, 36) {\ifimportant 63 \fi};
+        \node[violet-square] (node-64) at (31, 34) {\ifimportant 64 \fi};
+        \node[violet-square] (node-65) at (31, 32) {\ifimportant 65 \fi};
+        \node[violet-square] (node-66) at (29, 30) {\ifimportant 66 \fi};
+        \node[violet-square] (node-70) at (23, 28) {\ifimportant 70 \fi};
+        \node[violet-square] (node-71) at (23, 26) {\ifimportant 71 \fi};
         \node[dark-blue-square] (node-72) at (23, 40) {\ifimportant 72 \fi};
         \node[dark-blue-square] (node-73) at (25, 40) {\ifimportant 73 \fi};
         \node[dark-blue-square] (node-74) at (27, 40) {\ifimportant 74 \fi};
@@ -100,6 +102,37 @@
         \node[dark-blue-square] (node-112) at (-1, 8) {\ifimportant 112 \fi};
         \node[dark-blue-square] (node-114) at (3, 8) {\ifimportant 114 \fi};
         \node[airport-square] (node-115) at (3, 12) {AIRPORT};
+        \node[blue-square] (node-118) at (13, 6) {\ifimportant 118 \fi};
+        \node[blue-square] (node-120) at (17, 6) {\ifimportant 120 \fi};
+        \node[blue-square] (node-122) at (21, 6) {\ifimportant 122 \fi};
+        \node[violet-square] (node-125) at (11, 12) {\ifimportant 125 \fi};
+        \node[violet-square] (node-126) at (13, 12) {\ifimportant 126 \fi};
+        \node[violet-square] (node-127) at (15, 12) {\ifimportant 127 \fi};
+        \node[violet-square] (node-130) at (21, 12) {\ifimportant 130 \fi};
+        \node[violet-square] (node-133) at (11, 18) {\ifimportant 133 \fi};
+        \node[violet-square] (node-134) at (13, 18) {\ifimportant 134 \fi};
+        \node[violet-square] (node-136) at (17, 18) {\ifimportant 136 \fi};
+        \node[violet-square] (node-137) at (19, 18) {\ifimportant 137 \fi};
+        \node[violet-square] (node-139) at (23, 18) {\ifimportant 139 \fi};
+        \node[violet-square] (node-140) at (25, 18) {\ifimportant 140 \fi};
+        \node[violet-square] (node-142) at (29, 18) {\ifimportant 142 \fi};
+        \node[violet-square] (node-143) at (31, 18) {\ifimportant 143 \fi};
+        \node[violet-square] (node-145) at (35, 18) {\ifimportant 145 \fi};
+        \node[dark-blue-square] (node-146) at (37, 18) {\ifimportant 146 \fi};
+        \node[dark-blue-square] (node-147) at (37, 16) {\ifimportant 147 \fi};
+        \node[dark-blue-square] (node-148) at (37, 14) {\ifimportant 148 \fi};
+        \node[dark-blue-square] (node-149) at (37, 12) {\ifimportant 149 \fi};
+        \node[violet-square] (node-150) at (35, 12) {\ifimportant 150 \fi};
+        \node[violet-square] (node-151) at (33, 12) {\ifimportant 151 \fi};
+        \node[violet-square] (node-152) at (31, 12) {\ifimportant 152 \fi};
+        \node[violet-square] (node-153) at (29, 12) {\ifimportant 153 \fi};
+        \node[violet-square] (node-154) at (27, 12) {\ifimportant 154 \fi};
+        \node[blue-square] (node-156) at (25, 10) {\ifimportant 156 \fi};
+        \node[blue-square] (node-157) at (25, 8) {\ifimportant 157 \fi};
+        \node[blue-square] (node-158) at (25, 6) {\ifimportant 158 \fi};
+        \node[blue-square] (node-160) at (27, 4) {\ifimportant 160 \fi};
+        \node[blue-square] (node-161) at (27, 2) {\ifimportant 161 \fi};
+        \node[blue-square] (node-162) at (27, 0) {\ifimportant 162 \fi};
         \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 34) -- (-5, 34) -- (-5, 41);
         \draw[whiteroad] (-5, 41) -- (-5, 42) -- (0, 42);
         \draw[whiteroad] (2, 42) -- (4, 42);
@@ -162,7 +195,21 @@
         \node[white-square,rotate=270] (node-111) at (-1, 10) {SNACKS\\100};
         \node[white-square] (node-113) at (1, 8) {GALA\\TAKE\\CARD};
         \node[white-square] (node-116) at (9, 6) {FOR 300\\FLY TO\\HOTEL {\scriptsize RECEPTION}};
+        \node[white-square] (node-117) at (11, 6) {TIP TO\\PORTER\\50};
+        \node[white-square] (node-119) at (15, 6) {MEAL\\100};
+        \node[white-square] (node-121) at (19, 6) {{\scriptsize COCKTAILS}\\100};
+        \node[white-square] (node-123) at (23, 6) {TENNIS\\100};
         \node[white-square] (node-124) at (9, 12) {FOR 200\\FLY TO\\MOTEL {\scriptsize RECEPTION}};
+        \node[white-square] (node-128) at (17, 12) {PETROL\\50};
+        \node[white-square] (node-129) at (19, 12) {SNACKS\\50};
+        \node[white-square] (node-131) at (23, 12) {CAN SELL\\SURF\\BOARD\\FOR 100};
         \node[white-square] (node-132) at (9, 18) {FOR 100\\FLY TO\\CABIN {\scriptsize RECEPTION}};
+        \node[white-square] (node-135) at (15, 18) {SNACKS\\50};
+        \node[white-square] (node-138) at (21, 18) {WIN\\150\\AT RACES};
+        \node[white-square] (node-141) at (27, 18) {PETROL\\50};
+        \node[white-square] (node-144) at (33, 18) {WON\\100\\ON\\POKER\\MACHINE};
+        \node[white-square] (node-155) at (25, 12) {FOR 100\\YOU CAN\\MOVE TO\\HOTEL};
+        \node[white-square] (node-159) at (27, 6) {CHECK\\OUT\\100};
+        \node[white-square] (node-163) at (37, 10) {GALA\\TAKE\\CARD};
     \end{tikzpicture}
 \end{document}

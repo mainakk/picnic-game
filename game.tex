@@ -6,7 +6,7 @@
 \definecolor{pastelred}{rgb}{1.0, 0.41, 0.38}
 \definecolor{pastelorange}{rgb}{1.0, 0.7, 0.28}
 \newif\ifimportant
-\importanttrue
+\importantfalse
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
@@ -60,8 +60,11 @@
         \node[dark-blue-square] (node-49) at (5, 30) {\ifimportant 49 \fi};
         \node[dark-blue-square] (node-50) at (7, 30) {\ifimportant 50 \fi};
         \node[dark-blue-square] (node-52) at (11, 30) {\ifimportant 52 \fi};
-        \node[dark-blue-square] (node-55) at (17, 32) {\ifimportant 55 \fi};
-        \node[dark-blue-square] (node-56) at (17, 34) {\ifimportant 56 \fi};
+        \node[dark-blue-square] (node-54.1) at (17, 30) {\ifimportant 54.1 \fi};
+        \node[dark-blue-square] (node-54.2) at (19, 30) {\ifimportant 54.2 \fi};
+        \node[dark-blue-square] (node-54.3) at (19, 32) {\ifimportant 54.3 \fi};
+        \node[dark-blue-square] (node-55) at (19, 34) {\ifimportant 55 \fi};
+        \node[dark-blue-square] (node-56) at (21, 34) {\ifimportant 56 \fi};
         \node[dark-blue-square] (node-58) at (21, 38) {\ifimportant 58 \fi};
         \node[dark-blue-square] (node-59) at (23, 38) {\ifimportant 59 \fi};
         \node[violet-square] (node-60) at (25, 38) {\ifimportant 60 \fi};
@@ -155,12 +158,7 @@
         \draw[whiteroad] (2, 42) -- (4, 42);
         \draw[whiteroad] (8, 42) -- (10, 42);
         \draw[whiteroad] (16, 42) -- (17, 42) -- (17, 38) -- (11, 38) -- (11, 30);
-        \draw[whiteroad] (-7, 30) -- (16, 30);
-        \draw[blackroad] (16, 30) -- (17, 30) -- (17, 31);
-        \draw[whiteroad] (17, 31) -- (17, 35);
-        \draw[blackroad] (17, 35) -- (17, 36) -- (18, 36);
-        \draw[blackroad] (20, 36) -- (21, 36) -- (21, 37);
-        \draw[whiteroad] (21, 37) -- (21, 38) -- (25, 38) -- (25, 34) -- (29, 34)-- (29, 30) -- (23, 30) -- (23, 24);
+        \draw[whiteroad] (-7, 30) -- (19, 30) -- (19, 34) -- (21, 34) -- (21, 38) -- (25, 38) -- (25, 34) -- (29, 34)-- (29, 30) -- (23, 30) -- (23, 24);
         \draw[whiteroad] (23, 38) -- (23, 40) -- (35, 40) -- (35, 24) -- (-1, 24) -- (-1, 8) -- (3, 8) -- (3, 9);
         \draw[blackroad] (3, 9) -- (3, 10);
         \draw[blackroad] (7, 23) -- (3, 14);
@@ -187,7 +185,7 @@
         \node[white-square] (node-51) at (9, 30) {PAY TOLL\\50};
         \node[white-square] (node-53) at (13, 30) {SON LEFT\\COAT AT\\CAFE\\GO BACK};
         \node[white-square] (node-54) at (15, 30) {GALA\\TAKE\\CARD};
-        \node[white-square] (node-57) at (19, 36) {BANK\\COLLECT\\250};
+        \node[white-square] (node-57) at (21, 36) {BANK\\COLLECT\\250};
         \node[white-square] (node-67) at (27, 30) {{\scriptsize DAUGHTER}\\CAR SICK\\MISS A\\TURN};
         \node[white-square] (node-68) at (25, 30) {SNACK\\100};
         \node[white-square] (node-69) at (23, 30) {ROG\\GO TO\\FRED'S};

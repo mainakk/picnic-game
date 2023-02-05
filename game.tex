@@ -6,7 +6,7 @@
 \definecolor{pastelred}{rgb}{1.0, 0.41, 0.38}
 \definecolor{pastelorange}{rgb}{1.0, 0.7, 0.28}
 \newif\ifimportant
-\importanttrue
+\importantfalse
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
@@ -130,9 +130,25 @@
         \node[blue-square] (node-156) at (25, 10) {\ifimportant 156 \fi};
         \node[blue-square] (node-157) at (25, 8) {\ifimportant 157 \fi};
         \node[blue-square] (node-158) at (25, 6) {\ifimportant 158 \fi};
-        \node[blue-square] (node-160) at (27, 4) {\ifimportant 160 \fi};
-        \node[blue-square] (node-161) at (27, 2) {\ifimportant 161 \fi};
-        \node[blue-square] (node-162) at (27, 0) {\ifimportant 162 \fi};
+        \node[blue-square] (node-160) at (29, 6) {\ifimportant 160 \fi};
+        \node[blue-square] (node-161) at (29, 4) {\ifimportant 161 \fi};
+        \node[blue-square] (node-162) at (29, 2) {\ifimportant 162 \fi};
+        \node[blue-square] (node-164) at (37, 8) {\ifimportant 164 \fi};
+        \node[blue-square] (node-166) at (37, 4) {\ifimportant 166 \fi};
+        \node[blue-square] (node-167) at (37, 2) {\ifimportant 167 \fi};
+        \node[blue-square] (node-168) at (37, 0) {\ifimportant 168 \fi};
+        \node[blue-square] (node-169) at (35, 0) {\ifimportant 169 \fi};
+        \node[blue-square] (node-171) at (31, 0) {\ifimportant 171 \fi};
+        \node[blue-square] (node-172) at (29, 0) {\ifimportant 172 \fi};
+        \node[blue-square] (node-173) at (27, 0) {\ifimportant 173 \fi};
+        \node[blue-square] (node-174) at (25, 0) {\ifimportant 174 \fi};
+        \node[blue-square] (node-176) at (21, 0) {\ifimportant 176 \fi};
+        \node[blue-square] (node-177) at (19, 0) {\ifimportant 177 \fi};
+        \node[blue-square] (node-179) at (15, 0) {\ifimportant 179 \fi};
+        \node[blue-square] (node-181) at (11, 0) {\ifimportant 181 \fi};
+        \node[blue-square] (node-182) at (9, 0) {\ifimportant 182 \fi};
+        \node[blue-square] (node-184) at (5, 0) {\ifimportant 184 \fi};
+        \node[blue-square] (node-185) at (3, 0) {\ifimportant 185 \fi};
         \draw[whiteroad] (-2, 0) -- (-7, 0) -- (-7, 34) -- (-5, 34) -- (-5, 41);
         \draw[whiteroad] (-5, 41) -- (-5, 42) -- (0, 42);
         \draw[whiteroad] (2, 42) -- (4, 42);
@@ -160,6 +176,10 @@
         \draw[blackroad] (5, 14) -- (8, 18);
         \draw[blackroad] (5, 12) -- (8, 12);
         \draw[blackroad] (5, 10) -- (8, 6);
+        \draw[whiteroad] (8, 6) -- (25, 6);
+        \draw[whiteroad] (8, 12) -- (23, 12);
+        \draw[whiteroad] (8, 18) -- (37, 18) -- (37, 12) -- (25, 12) -- (25, 6) -- (29, 6) -- (29, 0);
+        \draw[whiteroad] (37, 12) -- (37, 0) -- (2, 0);
         \node[white-square,rotate=270] (node-6) at (-7, 6) {SNACKS\\50};
         \node[white-square,rotate=270] (node-9) at (-7, 12) {PETROL\\50};
         \node[white-square,rotate=270] (node-12) at (-7, 18) {MUM LEFT\\STOVE ON\\GO HOME};
@@ -210,6 +230,12 @@
         \node[white-square] (node-144) at (33, 18) {WON\\100\\ON\\POKER\\MACHINE};
         \node[white-square] (node-155) at (25, 12) {FOR 100\\YOU CAN\\MOVE TO\\HOTEL};
         \node[white-square] (node-159) at (27, 6) {CHECK\\OUT\\100};
-        \node[white-square] (node-163) at (37, 10) {GALA\\TAKE\\CARD};
+        \node[white-square,rotate=90] (node-163) at (37, 10) {GALA\\TAKE\\CARD};
+        \node[white-square,rotate=90] (node-165) at (37, 6) {FINE\\50\\FOR\\SPEEDING};
+        \node[white-square] (node-170) at (33, 0) {COW ON\\ROAD\\MISS A\\TURN};
+        \node[white-square] (node-175) at (23, 0) {FORGOT\\SUITCASE\\BACK TO\\{\scriptsize RECEPTION}};
+        \node[white-square] (node-178) at (17, 0) {DRINKS\\50};
+        \node[white-square] (node-180) at (13, 0) {MEAL\\100};
+        \node[white-square] (node-183) at (7, 0) {GALA\\TAKE\\CARD};
     \end{tikzpicture}
 \end{document}

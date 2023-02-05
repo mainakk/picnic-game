@@ -6,7 +6,7 @@
 \definecolor{pastelred}{rgb}{1.0, 0.41, 0.38}
 \definecolor{pastelorange}{rgb}{1.0, 0.7, 0.28}
 \newif\ifimportant
-\importantfalse
+\importanttrue
 \begin{document}
     \begin{tikzpicture}
         [every node/.style={rectangle,draw=black,thick,inner sep=0pt,align=center},
@@ -64,11 +64,11 @@
         \node[dark-blue-square] (node-58) at (21, 38) {\ifimportant 58 \fi};
         \node[dark-blue-square] (node-59) at (23, 38) {\ifimportant 59 \fi};
         \node[violet-square] (node-60) at (23, 36) {\ifimportant 60 \fi};
-        \node[violet-square] (node-61) at (25, 34) {\ifimportant 61 \fi};
-        \node[violet-square] (node-62) at (27, 36) {\ifimportant 62 \fi};
-        \node[violet-square] (node-63) at (29, 36) {\ifimportant 63 \fi};
-        \node[violet-square] (node-64) at (31, 34) {\ifimportant 64 \fi};
-        \node[violet-square] (node-65) at (31, 32) {\ifimportant 65 \fi};
+        \node[violet-square] (node-61) at (23, 34) {\ifimportant 61 \fi};
+        \node[violet-square] (node-62) at (25, 34) {\ifimportant 62 \fi};
+        \node[violet-square] (node-63) at (27, 34) {\ifimportant 63 \fi};
+        \node[violet-square] (node-64) at (29, 34) {\ifimportant 64 \fi};
+        \node[violet-square] (node-65) at (29, 32) {\ifimportant 65 \fi};
         \node[violet-square] (node-66) at (29, 30) {\ifimportant 66 \fi};
         \node[violet-square] (node-70) at (23, 28) {\ifimportant 70 \fi};
         \node[violet-square] (node-71) at (23, 26) {\ifimportant 71 \fi};
@@ -161,15 +161,7 @@
         \draw[whiteroad] (17, 31) -- (17, 35);
         \draw[blackroad] (17, 35) -- (17, 36) -- (18, 36);
         \draw[blackroad] (20, 36) -- (21, 36) -- (21, 37);
-        \draw[whiteroad] (21, 37) -- (21, 38) -- (23, 38) -- (23, 35);
-        \draw[blackroad] (23, 35) -- (23, 34) -- (24, 34);
-        \draw[whiteroad] (24, 34) -- (26, 34);
-        \draw[blackroad] (26, 34) -- (27, 34) -- (27, 35);
-        \draw[whiteroad] (27, 35) -- (27, 36) -- (30, 36);
-        \draw[blackroad] (30, 36) -- (31, 36) -- (31, 35);
-        \draw[whiteroad] (31, 35) -- (31, 31);
-        \draw[blackroad] (31, 31) -- (31, 30) -- (30, 30);
-        \draw[whiteroad] (30, 30) -- (23, 30) -- (23, 24);
+        \draw[whiteroad] (21, 37) -- (21, 38) -- (23, 38) -- (23, 34) -- (29, 34) -- (29, 30) -- (23, 30) -- (23, 24);
         \draw[whiteroad] (23, 38) -- (23, 40) -- (35, 40) -- (35, 24) -- (-1, 24) -- (-1, 8) -- (3, 8) -- (3, 9);
         \draw[blackroad] (3, 9) -- (3, 10);
         \draw[blackroad] (7, 23) -- (3, 14);

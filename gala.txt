@@ -1,12 +1,12 @@
-Gala pays you 100 for lift.
-Gala is a nuisance - you drop him off and miss one turn.
-Gala shows you shortcut - but it's the wrong way. Go back 5 spaces.
-Gala breaks knob of car radio - pay 100 for repairs.
-You run over Gala's suitcase - pay him 100.
-Gala shows you shortcut - advance 10 spaces.
-Gala is a mad millionaire and gives you 250.
-Gala pays you 50 for lift.
-Gala knows cheap place for petrol - saves you 100 (take from bank).
-Gala leaves 150 on back seat.
-Gala pulls a gun of you of 200.
-Fat Gala bursts seat belt - pay 100 for repairs.
+GALA PAYS YOU 100 FOR LIFT.
+GALA IS A NUISANCE. YOU DROP HIM OFF AND MISS ONE TURN.
+GALA SHOWS YOU SHORTCUT. BUT IT'S THE WRONG WAY. GO BACK 5 SPACES.
+GALA BREAKS KNOB OF CAR RADIO. PAY 100 FOR REPAIRS.
+YOU RUN OVER GALA'S SUITCASE. PAY HIM 100.
+GALA SHOWS YOU SHORTCUT. ADVANCE 10 SPACES.
+GALA IS A MAD MILLIONAIRE AND GIVES YOU 250.
+GALA PAYS YOU 50 FOR LIFT.
+GALA KNOWS CHEAP PLACE FOR PETROL. SAVES YOU 100 (TAKE FROM BANK).
+GALA LEAVES 150 ON BACK SEAT.
+GALA PULLS A GUN OF YOU OF 200.
+FAT GALA BURSTS SEAT BELT. PAY 100 FOR REPAIRS.
